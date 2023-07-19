@@ -1,0 +1,33 @@
+body {
+    overflow: hidden;
+    background-image: url('./imagens/wallpaper006.jpg');
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 100px;
+  }
+
+.quadrado {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: grey;
+    width: 300px;
+    height: 300px;
+    }
+
+#q1 {
+    background-color: skyblue;
+}
+
+#q2 {
+    background-image: linear-gradient(to bottom, yellow, red);
+}
+
+#q3 {
+    background-image: url("./imagens/pattern003.png");
+}
