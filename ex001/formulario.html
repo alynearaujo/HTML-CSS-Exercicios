@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário Simples</h1>
+    <form action="processar-dados.php" method="post">
+        <!-- Campos do formulário -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+    
+        <label for="sexo">Sexo:</label>
+        <input type="radio" id="masculino" name="sexo" value="masculino"> Masculino
+        <input type="radio" id="feminino" name="sexo" value="feminino"> Feminino
+    
+        <label for="interesses">Interesses:</label>
+        <input type="checkbox" id="esportes" name="interesses[]" value="esportes"> Esportes
+        <input type="checkbox" id="tecnologia" name="interesses[]" value="tecnologia"> Tecnologia
+        <input type="checkbox" id="viagens" name="interesses[]" value="viagens"> Viagens
+    
+        <!-- Botão de envio -->
+        <input type="submit" value="Enviar">
+    </form>
+    
+    
+</body>
+</html>
