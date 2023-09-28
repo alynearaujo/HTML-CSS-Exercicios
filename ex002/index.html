@@ -12,11 +12,19 @@
             <legend>Dados Pessoais</legend>
             <label>
                 Primeiro Nome: <br>
-                <input type="text" name="name">
+                <input type="text" name="name" required minlength="2">
             </label> <br>
             <label>
                 Sobrenome: <br>
-                <input type="text" name="lastname">
+                <input type="text" name="lastname" required>
+            </label> <br>
+            <label>
+                E-mail: <br>
+                <input type="text" name="email" pattern="(^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$)" required>
+            </label> <br>
+            <label>
+                Data de Nascimento: <br>
+                <input type="date" name="birthdate">
             </label> <br>
         </fieldset>
 
