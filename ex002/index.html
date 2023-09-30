@@ -16,15 +16,15 @@
             </label> <br>
             <label>
                 Sobrenome: <br>
-                <input type="text" name="lastname" required>
+                <input type="text" name="lastname">
             </label> <br>
             <label>
-                E-mail: <br>
-                <input type="text" name="email" pattern="(^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$)" required>
+                E-mail:<br>
+                <input type="email" name="email" pattern="(^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$)" title="endereço de E-mail" required>
             </label> <br>
             <label>
                 Data de Nascimento: <br>
-                <input type="date" name="birthdate">
+                <input type="date" name="birthdate" required>
             </label> <br>
         </fieldset>
 
